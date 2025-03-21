@@ -1,0 +1,412 @@
+.status-bar-safe-area {
+    display: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .status-bar-safe-area {
+        display: flex;
+        position: sticky;
+        top: 0;
+        height: env(safe-area-inset-top);
+        background-color: #f7f7f7;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .flex-column, .navbar-brand {
+        padding-left: env(safe-area-inset-left);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 3.7em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+.buttonGreen {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: whitesmoke;
+    background-color: lightgreen;
+}
+
+    .buttonGreen:hover {
+        background-color: mediumseagreen;
+    }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: mediumseagreen;
+}
+
+header {
+    background-color: rgb(245,245,245)
+}
+
+    header .logo {
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: seagreen;
+        font-size: 2.3em;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .lt {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    header a {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+        header a:hover {
+            color: mediumseagreen;
+        }
+
+#Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    margin: 0;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(https://content.app-sources.com/s/560776124224825021/uploads/abogado_inmobiliario/terreno-paisaje-natural-pin-ubicacion-2048x1152-min-8674891.jpg?format=webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+    #Hero h1 {
+        color: white;
+    }
+
+#plano {
+}
+
+    #plano .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 200px 12px;
+        align-items: center;
+    }
+
+    #plano .img-container {
+        height: 800px;
+        width: 600px;
+        display: flex;
+        align-content: center;
+        background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOjW7NJ7ih45fOY0NPb9_TZdtmzzkmDl2Pp-82ph8w56QGDOPLabXOfjZ54-Y9JvjuGCXXPEM1Y5AaEI_pE0Zg7__IHPmY8Gm0rdtDvMajjfOQiC-E=w2400);
+        background-position: center center;
+        background-size: cover;
+    }
+
+#carac {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+    #carac .container {
+        padding: 150px 12px;
+    }
+
+    #carac h4 {
+        margin-top: 0;
+    }
+
+    #carac p {
+        display: none;
+    }
+
+    #carac .carta {
+        padding: 50px 0px;
+        margin: 20px;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+.carta:first-child {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(https://i0.wp.com/leon.mx/wp-content/uploads/2025/01/Explora10.jpg?fit=1368%2C913&ssl=1);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(https://edifica.com.pe/blog/wp-content/uploads/vender-terreno-manera-eficaz.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(https://www.elclarinete.com.mx/wp-content/uploads/2022/08/Finanzas-Personales-Blog-Juan-Manuel.jpg);
+}
+
+#contacto {
+    margin: 0;
+    font-size: 1em;
+    background-color: slategray;
+    background-size: cover;
+}
+
+    #contacto .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 150px;
+        color: cornsilk;
+    }
+
+.Fin {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(230,230,230);
+}
+
+    footer p {
+        margin: 0;
+        padding: 12px;
+        color: rgb(100,100,100);
+    }
+
+    footer .container {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+.letra_ventana {
+    font-weight:1000;
+    font-size:100px;
+}
+
+@media(min-width:1080px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+        header .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header .lt {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+    #carac .programa {
+        display: flex;
+        justify-content: center;
+    }
+
+    #carac p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #carac h3 {
+        margin-top: 0;
+    }
+
+    #carac .carta {
+        padding: 30px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5)
+    }
+
+    #carac h4 {
+        font-size: 4em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+
+    .focused {
+        opacity: 1;
+    }
+
+    .unfocused {
+        opacity: 0;
+    }
+    #plano .img-container {
+        height: 1300px;
+        width: 1000px;
+    }
+   #mymodal .modal_content{
+        padding: 20px;
+        position: relative;
+        width: 1920px;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0 0 0 / .15);
+    }
+    #mymodal .modal-img{
+        width: 600px;
+        height: 600px;
+        object-fit: contain;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-left: 0;
+        background-size: cover;
+        align-content: center;
+    }
+
+}
+
+.modal{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: rgba(77, 77, 77, .7);
+   
+}
+.modal_content{
+     padding:20px;
+     position:relative;
+     width:450px;
+     height:auto;
+     background:white;
+     border-radius:10px;
+     box-shadow: 0 0 5px rgba(0 0 0 / .15);
+}
+.modal_content h7{
+    margin-top:20px;
+}
+.modal_content p{
+    margin:20px 0;
+}
+
+.modal-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    background-size: cover;
+    align-content: center;
+}
+.close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background:rgba(0 0 0 / .1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal_close{
+    font-weight:800;
+    font-size:20px;
+}
+.modal_close:hover{
+    color:orangered;
+}
+.terreno_titulo{
+    display:flex;
+    align-content:center;
+    justify-items:center;
+    justify-content:space-between;
+}
+.terreno_titulo a {
+    padding:50px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.pdf {
+    height:800px;
+    width:600px;
+    justify-content:center;
+    border:solid;
+    border-width:2px;
+    border-color:black;
+    box-shadow: 0 0 10px black;
+}
+
+.modal_media {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.planooo {
+    width: 1800px;
+    height: 2400px;
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOjW7NJ7ih45fOY0NPb9_TZdtmzzkmDl2Pp-82ph8w56QGDOPLabXOfjZ54-Y9JvjuGCXXPEM1Y5AaEI_pE0Zg7__IHPmY8Gm0rdtDvMajjfOQiC-E=w2400);
+    background-position: center center;
+    background-size: cover;
+    
+}
